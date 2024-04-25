@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-container {
+    /* border: solid red; */
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* margin-top: 6%; */
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(red, yellow);
+}
+
+.game-container .enemy {
+    /* border: solid black 2px; */
+    background: linear-gradient(blue, black);
+    width: 4%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bozz1 {
+    position: absolute;
+    left: 1150px;
+    animation: move 8s linear infinite;
+}
+
+#bozz2 {
+    position: absolute;
+    right: 70px;
+    top: 350px;
+    animation: move 6s linear infinite;
+}
+
+#bozz3 {
+    position: absolute;
+    left: 450px;
+    top: 350px;
+    animation: move 6s linear infinite;
+}
+
+#bozz4 {
+    position: absolute;
+    left: 40px;
+    top: 300px;
+    animation: move 8s linear infinite;
+}
+
+#bozz5 {
+    position: absolute;
+    left: 950px;
+    top: 300px;
+    animation: move 6s linear infinite;
+}
+
+#bozz6 {
+    position: absolute;
+    left: 990px;
+    top: 100px;
+    animation: move 8s linear infinite;
+}
+
+#bozz7 {
+    position: absolute;
+    left: 588px;
+    top: 300px;
+    animation: move 6s linear infinite;
+}
+
+#bozz8 {
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    animation: move 6s linear infinite;
+}
+
+#bozz9 {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    animation: move 8s linear infinite;
+}
+
+#bozz10 {
+    position: absolute;
+    left: 700px;
+    top: 0;
+    animation: move 3s linear infinite;
+}
+
+#bozz11 {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    animation: move 3s linear infinite;
+}
+
+#bozz12 {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    animation: move 3s linear infinite;
+}
+
+#bozz13 {
+    position: absolute;
+    left: 1200px;
+    top: 0;
+    animation: move 5s linear infinite;
+}
+
+#bozz14 {
+    position: absolute;
+    left: 500px;
+    top: 0;
+    animation: move 5s linear infinite;
+}
+
+#bozz15 {
+    position: absolute;
+    left: 1350px;
+    top: 0;
+    animation: move 4s linear infinite;
+}
+
+#bozz16 {
+    position: absolute;
+    left: 850px;
+    top: 0;
+    animation: move 4s linear infinite;
+}
+
+#bozz17 {
+    position: absolute;
+    left: 770px;
+    top: 0;
+    animation: move 2s linear infinite;
+}
+
+#bozz18 {
+    position: absolute;
+    left: 400px;
+    top: 0;
+    animation: move 4s linear infinite;
+}
+
+#bozz19 {
+    position: absolute;
+    right: 350px;
+    top: 0;
+    animation: move 3s linear infinite;
+}
+
+#bozz20 {
+    position: absolute;
+    right:210px;
+    top: 0;
+    animation: move 2s linear infinite;
+}
+
+.stop {
+    animation-play-state: paused;
+}
+
+#antBoy{
+    background: linear-gradient(red, rgb(241, 6, 45));
+    width: 4%;
+    height: 9%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#active {
+    width: 20%;
+    height: 10vh;
+    background: #c0bebe;
+    color: red;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+    display: none;
+}
+
+@keyframes move {
+from {
+    transform: translatey(-400px);
+}
+to {
+    transform: translatey(1000px);
+}
+}
+
+
+
+/* enemies.forEach((enemy) => {
+    function animateEnemy() {
+        num += 1;
+        block.style.top = num + "px";
+        checkCollision()
+        requestAnimationFrame(animateEnemy)
+    }
+
+    animateEnemy() */
+
+
+
+
+
+/* enemies.forEach((enemy) => {
+    enemy.addEventListener('click', () => {
+        // Get the value from the clicked enemy div
+        let enemyValue = Number(enemy.textContent);
+
+        // Update the antBoy value by adding the enemy value
+        let antBoyValue = Number(antBoy.textContent);
+        antBoyValue += enemyValue;
+
+        // Update the antBoy element's text content
+        antBoy.textContent = antBoyValue;
+    });
+}); */
+
+
+
+/* the final quest */
+/* romans 8 :34-35 */
+/* hebrews 11,12 */
