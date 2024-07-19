@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function checkCollision() {
-        if (!gameActive) return;
+        // if (!gameActive) return;
 
         const antBoyRect = antBoy.getBoundingClientRect();
 
