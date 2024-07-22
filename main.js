@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         switch (e.key) {
             case "ArrowRight":
-                num += 20;
+                num += 
                 antBoy.style.left = num + "px";
                 break;
             case "ArrowLeft":
