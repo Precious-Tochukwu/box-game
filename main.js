@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 playCollisionSound();
                 backgroundAudio.pause();
 
-                // enemies.forEach((enemy) => {
-                //     enemy.classList.add('stop');
-                //     console.log('Added stop class to enemy');
-                // });
+                enemies.forEach((enemy) => {
+                    enemy.classList.add('stop');
+                    console.log('Added stop class to enemy');
+                });
             }
         });
     }
@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
     playBackgroundAudio();
 
 });
+
+
 
 
 
