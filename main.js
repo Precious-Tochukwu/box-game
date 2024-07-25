@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const collisionSound = new Audio('biodynamic-impact-braam-tonal-dark-176441.mp3');
     const backgroundAudio = new Audio('horror-background-atmosphere-156462.mp3');
 
-    // function playCollisionSound() {
-    //     collisionSound.play();
-    // }
+    function playCollisionSound() {
+        collisionSound.play();
+    }
 
     function playBackgroundAudio() {
         backgroundAudio.loop = true;
