@@ -5,11 +5,9 @@
 }
 
 .game-container {
-    /* border: solid red; */
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    /* margin-top: 6%; */
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -19,7 +17,6 @@
 }
 
 .game-container .enemy {
-    /* border: solid black 2px; */
     background: linear-gradient(blue, black);
     width: 4%;
     height: 9%;
@@ -206,7 +203,14 @@ from {
 to {
     transform: translatey(1000px);
 }
-}
+} */
+
+
+
+
+/* Default border
+
+
 
 
 
