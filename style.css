@@ -168,7 +168,7 @@
     animation-play-state: paused;
 }
 
-#antBoy{
+#target{
     background: linear-gradient(red, rgb(241, 6, 45));
     width: 4%;
     height: 9%;

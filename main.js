@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let gameActive = true;
-    const antBoy = document.getElementById('antBoy');
+    const target = document.getElementById('target');
     const enemies = document.querySelectorAll('.enemy');
     let num = 10;
 
@@ -19,20 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkCollision() {
         if (!gameActive) return;
 
-        const antBoyRect = antBoy.getBoundingClientRect();
+        const targetRect = target.getBoundingClientRect();
 
         enemies.forEach((enemy) => {
             const enemyRect = enemy.getBoundingClientRect();
 
             if (
-                antBoyRect.top < enemyRect.bottom &&
-                antBoyRect.bottom > enemyRect.top &&
-                antBoyRect.left < enemyRect.right &&
-                antBoyRect.right > enemyRect.left
+                targetRect.top < enemyRect.bottom &&
+                targetRect.bottom > enemyRect.top &&
+                targetRect.left < enemyRect.right &&
+                targetRect.right > enemyRect.left
             ) {
                 gameActive = false;
                 document.getElementById("active").style.display = 'block';
-                antBoy.style.display = 'none';
+                target.style.display = 'none';
                 playCollisionSound();
                 backgroundAudio.pause();
 
@@ -50,20 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
         switch (e.key) {
             case "ArrowRight":
                 num += 20;
-                antBoy.style.left = num + "px";
+                target.style.left = num + "px";
                 break;
             case "ArrowLeft":
                 num -= 20;
-                antBoy.style.left = num + "px";
+                target.style.left = num + "px";
                 break;
         }
 
         if (num <= 0) {
             num = 0;
-            antBoy.style.left = num + "px";
+            target.style.left = num + "px";
         } else if (num >= 1835) {
             num = 1835;
-            antBoy.style.left = num + "px";
+            target.style.left = num + "px";
         }
         checkCollision();
     });
